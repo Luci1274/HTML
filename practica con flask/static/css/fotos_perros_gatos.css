@@ -1,0 +1,33 @@
+body {
+    background-color: #ca6464e1;
+    margin: 0;
+    padding: 0;
+}
+
+.introduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+    margin-left: 200px;
+}
+
+.imagen_gato, .imagen_perro {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.imagen_gato img, .imagen_perro img {
+    width: 460px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+

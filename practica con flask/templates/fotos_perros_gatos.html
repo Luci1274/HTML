@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/fotos_perros_gatos.css') }}">
+{% endblock %}
+
+{% block title %}Fotos Perros y Gatos{% endblock %}
+
+{% block content %}
+<div class="introduccion">
+    <div class="imagen_gato">
+        <h1>The cat api</h1>
+        <img id="image_cat" src="" alt="Cat Image">
+    </div>
+    <div class="imagen_perro">
+        <h1>The dog api</h1>
+        <img id="image_dog" src="" alt="Dog Image">
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/fotos_perros_gatos.js') }}"></script>
+{% endblock %}

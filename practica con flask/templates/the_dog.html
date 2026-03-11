@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/fotos_perros_gatos.css') }}">
+{% endblock %}
+
+{% block title %}The dog api{% endblock %}
+
+{% block content %}
+<div class="introduccion">
+    <h1>The dog api</h1>
+    {% if image_dog %}
+        <img src="{{ image_dog }}" alt="Dog Image" style="max-width: 500px;">
+    {% else %}
+        <p>No se pudo cargar la imagen. Intenta recargando la página.</p>
+    {% endif %}
+</div>
+{% endblock %}

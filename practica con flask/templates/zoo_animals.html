@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/zoo_animals.css') }}">
+{% endblock %}
+
+{% block title %}Foto e informacion sobre animales del zoo{% endblock %}
+
+{% block content %}
+<div class="introduccion">
+    <div class="zoo">
+        <h1>Zoo Animal api</h1>
+        <h1> Por ahora la API no funciona</h1>
+        <img id="zoo_animal_image" src="" alt="zoo animal Image">
+        <div class="zoo_animal_info">
+            <h2 id="zoo_animal_name"></h2>
+            <h3 id="zoo_animal_type"></h3>
+            <p id="zoo_animal_habitat"></p>
+            <p id="zoo_animal_geo_range"></p>
+            <p id="zoo_animal_diet"></p>
+            <p id="zoo_animal_lifespan"></p>
+            <p id="zoo_animal_active_time"></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/zoo_animals.js') }}"></script>
+{% endblock %}

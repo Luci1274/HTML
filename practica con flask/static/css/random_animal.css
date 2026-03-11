@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(135deg, #c94b4b, #4b134f);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.animal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+/* TARJETA */
+
+.animal-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* IMAGEN */
+
+.animal-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* INFO */
+
+.animal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+/* TITULOS */
+
+.animal-info h2 {
+    margin: 0;
+    color: #333;
+}
+
+/* TEXTOS */
+
+.animal-info p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* BOTON */
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #ff5a5a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff2f2f;
+    transform: scale(1.05);
+}
+
+/* TITULO PRINCIPAL */
+
+h1 {
+    color: white;
+}

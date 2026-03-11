@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for("static", filename="css/random_animal.css") }}">
+{% endblock %}
+
+{% block title %}Animales Aleatorios{% endblock %}
+
+{% block content %}
+<div class="animal-container">
+
+    <h1>Random Animal API</h1>
+
+    <div class="animal-card">
+
+        <div class="animal-image">
+            <img id="animal-image" src="" alt="Animal">
+        </div>
+
+        <div class="animal-info">
+            <h2>Dato aleatorio en Inglés</h2>
+            <p id="animal-fact"></p>
+
+            <h2>Dato aleatorio en Español</h2>
+            <p id="animal-fact-traducido"></p>
+        </div>
+
+    </div>
+
+    <button onclick="obtenerRandomAnimal()">Obtener Animal</button>
+
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/random_animal.js') }}"></script>
+{% endblock %}

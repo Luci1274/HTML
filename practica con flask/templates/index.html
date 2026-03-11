@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block title %}About - Mi sitio{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>About</h1>
+    <p>Esta es una página de ejemplo creada con Flask. Para practicar las distintas funcionalidades del framework.</p>
+    <p>Y practicar/aprender html,css y js (si avanzo lo necesario)</p>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+/* Contenedor principal de la barra de navegación */
+.navegacion {
+    background-color: #333;           /* Color de fondo gris oscuro */
+    overflow: hidden;                 /* Oculta cualquier contenido que sobresalga */
+    position: fixed;                  /* Fija la barra para que no se mueva al scrollear */
+    left: 0;                          /* Posiciona en el lado izquierdo */
+    top: 0;                           /* Empieza desde arriba */
+    width: 200px;                     /* Ancho de la barra (200 píxeles) */
+    height: 100vh;                    /* Alto 100% de la ventana (100 viewport height) */
+}
+
+/* Título de la navegación */
+.titulo_nav {
+    color: white;                     /* Color del texto blanco */
+    text-align: center;               /* Centra el texto */
+    padding: 20px 0;                 /* Espacio arriba y abajo del título */
+    font-family: 'Arial', sans-serif; /* Fuente Arial */
+    font-size: 24px;                  /* Tamaño de fuente grande */
+}
+
+/* Lista de navegación */
+.navegacion ul {
+    list-style-type: none;            /* Elimina los puntos de la lista */
+    margin: 0;                        /* Sin espacios externos */
+    padding: 0;                       /* Sin espacios internos */
+}
+
+/* Items de la lista */
+.navegacion li {
+    float: none;                      /* No flota (no va a los lados) */
+    display: block;                   /* Cada link ocupa toda la fila */
+    border-bottom: 1px solid #555;    /* Línea gris separadora entre links */
+}
+
+/* Enlaces de navegación */
+.navegacion a {
+    display: block;                   /* Hace que sea clickeable en toda la fila */
+    color: white;                     /* Texto blanco */
+    padding: 15px;                    /* 15px de espacio interno alrededor del texto */
+    text-decoration: none;            /* Sin subrayado */
+}
+
+/* Efecto al pasar el mouse sobre un link */
+.navegacion a:hover {
+    background-color: #555;           /* Fondo gris más claro cuando pones el mouse encima */
+}
