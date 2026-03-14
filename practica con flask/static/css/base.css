@@ -1,0 +1,115 @@
+/* Reset básico */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Estilo general */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #c94b4b, #4b134f);
+    color:#333;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    background:#333;
+    color:white;
+    padding:15px 0;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* TITULO CENTRADO REAL */
+.titulo_header{
+    text-align:center;
+}
+
+.titulo_header h1{
+    font-size:28px;
+}
+
+/* BOTONES DERECHA */
+.opciones_usuario{
+    position:absolute;
+    right:0;
+    display:flex;
+    gap:10px;
+}
+
+.opciones_usuario div{
+    background:#555;
+    padding:6px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.opciones_usuario div:hover{
+    background:#777;
+}
+
+/* BOTONES USUARIO */
+.opciones_usuario{
+    display:flex;
+    gap:20px;
+}
+
+.opciones_usuario div{
+    background-color: #4b4a4a;
+    color:#ffffff;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:14px;
+}
+
+.opciones_usuario div:hover{
+    background:#e3ecff;
+    transform:translateY(-2px);
+}
+
+/* CONTENIDO PRINCIPAL */
+main{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    flex:1;
+}
+
+/* FOOTER */
+.footer{
+    background-color:#333;
+    color:white;
+    text-align:center;
+    padding:15px 0;
+    margin-top:auto;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+    .contenedor{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .opciones_usuario{
+        justify-content:center;
+    }
+
+}

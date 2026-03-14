@@ -1,30 +1,21 @@
-/* Body - Estilos generales de la página */
-body {
-    background-color: #f7b2b2e1;     /* Fondo rosado */
-    font-family: 'Arial', sans-serif; /* Tipo de letra */
-    margin: 0;                        /* Sin espacios externos */
-    padding: 0;                       /* Sin espacios internos */
-    margin-left: 200px;               /* Espacio a la izquierda para la barra de navegación */
-}
 
 /* Contenedores de contenido */
-.container, .introduccion {
+.container {
     background-color: #f7b2b2e1;     /* Mismo rosado que el body */
     padding: 20px;                    /* 20px de espacio interno */
     margin: 20px auto;                /* 20px de espacios externos */
 }
 
 /* Títulos principales (h1) */
-h1 {
+.titulo_index h1 {
     text-align: center;               /* Texto centrado */
-    background-color: #666;           /* Fondo gris */
-    color: #f7b2b2e1;                 /* Texto rosado */
-    font-family: 'Arial', sans-serif; /* Tipo de letra */
-    margin-top: 20px;                 /* 20px de espacio arriba */
+    color: #333;                      /* Color gris oscuro */
+    font-size: 2em;                   /* Tamaño de fuente grande */
+    margin-bottom: 20px;              /* Espacio debajo del título */
 }
 
 /* Párrafos */
-p {
+.container p {
     text-align: center;               /* Texto centrado */
     color: #666;                      /* Texto gris */
     font-family: 'Arial', sans-serif; /* Tipo de letra */

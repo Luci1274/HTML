@@ -1,8 +1,3 @@
-body {
-    background-color: #ca6464e1;
-    margin: 0;
-    padding: 0;
-}
 
 .introduccion {
     display: flex;
@@ -17,7 +12,7 @@ body {
     text-align: center;
 }
 
-h1 {
+.imagen_gato h1, .imagen_perro h1 {
     font-family: 'Arial', sans-serif;
     color: #333;
     margin-bottom: 20px;

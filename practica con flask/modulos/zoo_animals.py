@@ -1,30 +1,28 @@
-import requests
+import json
+import random
 
 class zoo_animals:
+
     def __init__(self):
-        self.url = "https://zoo-animals-api.p.rapidapi.com/animals/rand/10"
-        self.headers = {
-            "X-RapidAPI-Key": "11a689094emshc37250ab26d93bdp16b271jsn5b0aba8feb78",
-            "X-RapidAPI-Host": "zoo-animals-api.p.rapidapi.com"
-        }
-    
+        self.file = "data/animales.json"
+
     def obtener_animal(self):
         try:
-            response = requests.get(self.url, headers=self.headers, timeout=5)
-            if response.status_code == 200:
-                response.raise_for_status()
-                data = response.json()
-                return {
-                    "name": data.get("name"),
-                    "animal_type": data.get("animal_type"),
-                    "active_time": data.get("active_time"),
-                    "lifespan": data.get("lifespan"),
-                    "habitat": data.get("habitat"),
-                    "diet": data.get("diet"),
-                    "geo_range": data.get("geo_range"),
-                    "image_link": data.get("image_link")
-                }
-            else:
-                return {"error": f"Error al obtener el animal: {response.status_code}"}
-        except requests.exceptions.RequestException as e:
+            with open(self.file, "r", encoding="utf-8") as f:
+                animales = json.load(f)
+
+            animal = random.choice(animales)
+
+            return {
+                "name": animal.get("name"),
+                "animal_type": animal.get("animal_type"),
+                "active_time": animal.get("active_time"),
+                "lifespan": animal.get("lifespan"),
+                "habitat": animal.get("habitat"),
+                "diet": animal.get("diet"),
+                "geo_range": animal.get("geo_range"),
+                "image_link": animal.get("image_link")
+            }
+
+        except Exception as e:
             return {"error": f"Error al obtener el animal: {e}"}

@@ -4,19 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/navegacion.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+
     {% block css %}{% endblock %}
     <title>{% block title %}Mi sitio{% endblock %}</title>
-    <style>
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
     <nav class="navegacion">
@@ -25,11 +16,28 @@
             <li><a href="/">Home</a></li>
             <li><a href="/imagenes/perros_gatos">Fotos Perros y Gatos</a></li>
             <li><a href="/imagenes/zorros">Fotos Zorros</a></li>
-            <li><a href="/animales/zoo">informacion y fotos de Animales del Zoo (no funcional)</a></li>
+            <li><a href="/animales/zoo">informacion y fotos de Animales del Zoo</a></li>
             <li><a href="/animales/aleatorios">informacion y fotos de Animales Aleatorios</a></li>
         </ul>
     </nav>
     
+    <header>
+        <div class="contenedor">
+            <div class="titulo_header">
+                <h1>Centro de prueba Apis</h1>
+            </div>
+            <div class="opciones_usuario">
+                <div>
+                    <h2>Registrarse</h2>
+                </div>
+                <div>
+                    <h2>Iniciar sesion</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
     {% block content %}
     <!-- El contenido específico de cada página va aquí -->
     {% endblock %}
@@ -38,8 +46,10 @@
     {% block js %}
     <!-- Los scripts específicos de cada página van aquí -->
     {% endblock %}
+
+<footer class="footer">
+    <p>&copy; 2024 Mi sitio. Todos los derechos reservados.</p>
+</footer>
+
 </body>
-    <footer class="footer">
-        <p>&copy; 2024 Mi sitio. Todos los derechos reservados.</p>
-    </footer>
 </html>
