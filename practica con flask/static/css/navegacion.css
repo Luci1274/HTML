@@ -44,3 +44,26 @@
 .navegacion a:hover {
     background-color: #555;           /* Fondo gris más claro cuando pones el mouse encima */
 }
+
+/* SUBLISTA */
+
+.navegacion li ul {
+    background-color: #444;
+}
+
+.navegacion li ul li {
+    border-bottom: none;
+}
+
+.navegacion li ul a {
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.navegacion li ul {
+    display: none;
+}
+
+.navegacion li:hover ul {
+    display: block;
+}

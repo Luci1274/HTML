@@ -3,6 +3,7 @@ from modulos.imagenes_perros_gatos import The_dog_api, The_cat_api
 from modulos.imagenes_zorros import ImagenesZorros
 from modulos.zoo_animals import zoo_animals
 from modulos.random_animal import random_animal
+from modulos.random_joke import RandomJoke
 
 app = Flask(
     __name__,
@@ -76,6 +77,21 @@ def animales_aleatorios():
         random_animal_api = random_animal()
         animal = random_animal_api.obtener_animal()
         return jsonify(animal)
+    except Exception as e:
+        return jsonify({"error": str(e)})
+    
+"""Página de chistes aleatorios"""
+@app.route("/chistes/aleatorios")
+def random_joke_page():
+    return render_template("random_joke.html")
+
+"""Inicializar el api de chistes aleatorios"""
+@app.route("/chistes/api/aleatorios/")
+def chistes_aleatorios():
+    try:
+        random_joke_api = RandomJoke()
+        joke = random_joke_api.get_joke()
+        return jsonify(joke)
     except Exception as e:
         return jsonify({"error": str(e)})
 

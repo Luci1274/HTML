@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/random_joke.css') }}">
+{% endblock %}
+
+{% block title %}Chistes Aleatorios{% endblock %}
+
+{% block content %}
+    <div class="joke-container">
+        <h1>Chistes Aleatorios</h1>
+        <div id="joke">
+            <h3>Original</h3>
+            <p id="setup">Buscando chiste...</p>
+            <p id="punchline">Buscando chiste...</p>
+
+            <h3>Traducción</h3>
+            <p id="setup_traducido">Traduciendo chiste...</p>
+            <p id="punchline_traducido">Traduciendo chiste...</p>
+        </div>
+    
+    </div>
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/random_joke.js') }}"></script>
+{% endblock %}

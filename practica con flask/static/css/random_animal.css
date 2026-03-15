@@ -1,5 +1,3 @@
-
-
 /* CONTENEDOR PRINCIPAL */
 
 .animal-container {
@@ -79,6 +77,6 @@ button:hover {
 
 /* TITULO PRINCIPAL */
 
-h1 {
+.animal-container h1 {
     color: white;
 }
