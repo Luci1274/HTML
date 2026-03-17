@@ -104,7 +104,7 @@ def registro():
         if crear_usuario(username, password):
             return redirect("/login")
         else:
-            return "Usuario ya existe"
+            return render_template("registro.html", error="El usuario ya existe")
     return render_template("registro.html")
 
 """Página de login"""
@@ -119,7 +119,7 @@ def login():
             session["user"] = user["username"]
             return redirect("/")
         else:
-            return "Credenciales incorrectas"
+            return render_template("login.html", error="Credenciales incorrectas")
     return render_template("login.html")
 
 """Ruta de logout"""

@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css') }}">
-    <title>Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <title>Login</title>
 </head>
 <body>
     
-    <div class="registro">
+    <div class="login">
         <div class="titulo">
-            <h1>Registro de usuario</h1>
-            <p> El registro es opcional. Solamente sirve para practicar, los datos son con fines academicos</p>
+            <h1>Iniciar sesión</h1>
+            <p> El inicio de sesión es opcional. Solamente sirve para practicar, los datos son con fines academicos</p>
         </div>
 
         <div class="formulario">
-            <form method="POST" action="/registro"> 
+            <form method="POST" action="/login"> 
                 <label>Usuario:</label><br>
                 <input type="text" name="username" required><br><br>
                 
                 <label>Contraseña:</label><br>
                 <input type="password" name="password" required><br><br>
 
-                <button type="submit">Crear cuenta</button>
-                
+                <button type="submit">Iniciar sesión</button>
+
                 {% if error %}
                     <p style="color:red;">{{ error }}</p>
                 {% endif %}
@@ -32,8 +32,9 @@
         </div>
         <div class="enlace">
             <br>
-            <a href="/login">¿Ya tienes una cuenta? Inicia sesión aquí.</a>
+            <a href="/registro">¿No tienes una cuenta? Regístrate aquí.</a>
         </div>
     </div>
+
 </body>
 </html>

@@ -5,13 +5,18 @@ body {
     padding: 0;
 }
 
-.registro {
+.login {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .formulario {
@@ -31,9 +36,9 @@ body {
     border-radius: 3px;
 }
 
-.formulario a {
+.formulario button {
     padding: 10px;
-    background-color: #28a745;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 3px;
