@@ -1,14 +1,13 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, redirect, session
 from modulos.imagenes_perros_gatos import The_dog_api, The_cat_api
 from modulos.imagenes_zorros import ImagenesZorros
 from modulos.zoo_animals import zoo_animals
 from modulos.random_animal import random_animal
 from modulos.random_joke import RandomJoke
+from modulos.login import crear_usuario, verificar_usuario
 
-app = Flask(
-    __name__,
-
-)
+app = Flask(__name__,)
+app.secret_key = "clave_secreta"
 
 """Ruta principal"""
 @app.route("/")
@@ -94,6 +93,41 @@ def chistes_aleatorios():
         return jsonify(joke)
     except Exception as e:
         return jsonify({"error": str(e)})
+
+"""Página de registro"""
+@app.route("/registro", methods=["GET", "POST"])
+def registro():
+    if request.method == "POST":
+        username = request.form["username"]
+        password = request.form["password"]
+        
+        if crear_usuario(username, password):
+            return redirect("/login")
+        else:
+            return "Usuario ya existe"
+    return render_template("registro.html")
+
+"""Página de login"""
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        username = request.form["username"]
+        password = request.form["password"]
+
+        user = verificar_usuario(username, password)
+        if user:
+            session["user"] = user["username"]
+            return redirect("/")
+        else:
+            return "Credenciales incorrectas"
+    return render_template("login.html")
+
+"""Ruta de logout"""
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
