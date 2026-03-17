@@ -33,12 +33,18 @@
                 <h1>Centro de prueba Apis</h1>
             </div>
             <div class="opciones_usuario">
+                {% if "user" in session %}
                 <div>
-                    <h2>Registrarse</h2>
+                    <h2><a href="/logout">Cerrar sesion</a></h2>
+                </div>
+                {% else %}
+                <div>
+                    <h2><a href="/registro">Registrarse</a></h2>
                 </div>
                 <div>
-                    <h2>Iniciar sesion</h2>
+                    <h2><a href="/login">Iniciar sesion</a></h2>
                 </div>
+                {% endif %}
             </div>
         </div>
     </header>
