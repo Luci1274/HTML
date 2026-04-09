@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {background-color:darkgray}
+        #pagina_emergente {background-color: brown; color: blue;}
+    </style>
+    <title>Prueba 2</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="Inicio">NOTICIA</h1>
+        <div>
+            <button><a href="#fin">Al footer</a></button>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <button popovertarget="pagina_emergente">presione</button>
+            <div id="pagina_emergente" popover="">
+                <h2>Solo muestra esto!!!! (°_°) (T_T)</h2>
+                <button popovertarget="pagina_emergente" popovertargetaction="hide">Cerrar</button>
+            </div>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="ej.juan">
+        </div>
+
+
+        <hr>
+        <div>
+            <b>hola</b>
+            <strong>hola</strong>
+            <i>hola</i>
+            <em>hola</em>
+            <mark>hola</mark>
+            <del>hola</del>
+            <ins>hola</ins>
+            <sub>hola</sub>
+            <sup>hola</sup>
+            <small>hola</small>
+        </div>
+        <hr>
+
+        <div>
+            <h1>
+                Titulo de noticia
+            </h1>
+            <prev>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vitae explicabo iure quibusdam debitis! Cum
+                nulla quos quod possimus in? Commodi sint amet dolorum cumque blanditiis possimus sequi odio fugiat.</prev>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            <hr>
+            <p>
+                Nulla dignissimos eligendi quasi est nisi facilis amet </p>
+            <br>
+            <p>
+                sint ex doloremque qui cumque quaerat ullam dolor excepturi, eius optio magni commodi!
+            </p>
+            <p>
+                hola mundo
+            </p>
+
+        </div>
+        <hr>
+
+        <div>
+            <h2>Listas ordenadas</h2>
+
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ol>
+
+            <h2>Listas desordendas</h2>
+            <ul>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <hr>
+        <!--Comentario-->
+        <div>
+            <button>
+                <a href="https://www.google.com/?hl=es"> Vaya a google self</a>
+            </button>
+            <!--blanck-->
+            <button>
+                <a href="https://www.google.com/?hl=es" target="_blank"> Vaya a google blanck</a>
+            </button>
+            <!--top-->
+            <button>
+                <a href="https://www.google.com/?hl=es" target="_top"> Vaya a google _top</a>
+            </button>
+
+        </div>
+        <hr>
+
+        <div>
+            <div>
+                <p>
+                    Deberia de haber un video
+                </p>
+                <video
+                    src="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQb3E72v4ED7zXpDuNZfTl8GIAER7qVyJwXyKV1jGqYe6n3UF9c"
+                    type="video/mp4"></video>
+            </div>
+            <div>
+                <p>
+                    Deberia de haber una imagen
+                </p>
+                <img src="https://img.freepik.com/vector-gratis/cute-cloud-winter-wearing-hat-cartoon-vector-icon-illustration-nature-holiday-icon-isolated-flat_138676-13304.jpg?semt=ais_incoming&w=740&q=80"
+                    alt="" width="150px" height="150">
+            </div>
+            <div>
+                <p>
+                    Deberia de haber un audio
+                </p>
+                <audio controls src="kuzu420-programming-a-computer-loop-323395.mp3"></audio>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p>Compruebe su destino</p>
+            <button>
+                <a href="/prueba.html">Compruebe</a>
+            </button>
+        </div>
+    </main>
+    
+    <footer>
+        <hr>
+        <button id="fin">
+            <a href="#Inicio">Inicio</a>
+        </button>
+    </footer>
+
+</body>
+
+</html>
