@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Practica de formulario</h1>
+        <hr>
+    </header>
+    <main>
+        <div>
+            <p>Esta es una practica de formulario y los datos no van a ser guardados</p>
+        </div>
+        <div>
+            <label for="Nombre">Ingrese un nombre</label>
+            <input type="text" name="" id="Nombre" placeholder="EJ: Gabriela" required>
+            <br>
+            <label for="Numero">Ingrese un numero</label>
+            <input type="number" name="Numero" id="Numero" placeholder="Numero aleatorio">
+            <br>
+            <button popovertarget="pagina_emergente">Ingresar</button>
+            <div id="pagina_emergente" popover="">
+                <h2>Como dije esto es solamente una prueba</h2>
+                <button popovertarget="pagina_emergente" popovertargetaction="hide">Cerrar</button>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <label for="Opciones">Elije una de las opciones</label>
+                <select name="Opciones" id="" required>
+                    <option value="0">Opciones</option>
+                    <option value="1">alfajor</option>
+                    <option value="2">pizza</option>
+                    <option value="3">Ninguna</option>
+                </select>
+        </div>
+    </main>
+    <footer>
+        <hr>
+
+    </footer>
+</body>
+</html>
