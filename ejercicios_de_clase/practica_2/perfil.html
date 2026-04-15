@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            background-color: rgb(44, 41, 41);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #Contenedor_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        #contenedor_titulo {
+            margin-left: 20px;
+        }
+        #contenedor_titulo h1 {
+            margin: 0 auto;
+            align-content: center;
+
+        }
+        #contenedor_imagen {
+            margin-right: 20px;
+            height: 100%;
+        }
+        ion-icon {
+            width: 150px;
+            height: 50px;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: auto;
+            margin: 25px 0;
+        }
+        #contenedor_form_personal {
+            background-color: rgb(44, 41, 41);
+            color: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            display: flex;
+            text-align: center;
+            align-content: center;
+        }
+        label {
+            display: flex;
+            text-align: center;
+            align-content: center;
+        }
+        #imagenIconoForm {
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        #submitInput {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 30%;
+            height: 50px;
+            width: 150px;
+        }
+    </style>
+    <title>Perfil de usuario</title>
+</head>
+
+<body>
+    <header>
+        <div id="Contenedor_header">
+            <div id="contenedor_titulo">
+                <h1>Perfil de .....</h1>
+            </div>
+            <div id="contenedor_imagen">
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div id="contenedor_main">
+            <div id="contenedor_form_personal">
+                <form action="index_practica_2.html">
+                    <fieldset>
+                        <input type="text" name="txtInputRead" id="txtInputRead" readonly value="Estudiante">
+                        <hr>
+
+                        <label for="txtInputNombre">Nombre completo:</label>
+                        <input type="text" name="txtInputNombre" id="txtInputNombre"
+                            placeholder="Luciano Ezequiel Gonzalez" required>
+                        <hr>
+
+                        <label for="txtInputEmail">Ingrese un email:</label>
+                        <input type="email" name="txtInputEmail" id="txtInputEmail" placeholder="juancitogar@gmail.com" required>
+                        <hr>
+
+                        <label for="txtInputEdad">Ingrese su edad:</label>
+                        <input type="number" name="txtInputEdad" id="txtInputEdad" min="1" max="120" required>
+                        <hr>
+
+                        <label for="selectNacionalidad">Nacionalidad:</label>
+                        <select id="selectNacionalidad" name="selectNacionalidad" required>
+                            <option value="" disabled>Seleccione su nacionalidad</option>
+                            <option value="AR">Argentina</option>
+                            <option value="MX">México</option>
+                            <option value="UR">Uruguay</option>
+                            <option value="PA">Paraguay</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="CL">Chile</option>
+                        </select>
+                        <hr>
+
+                        <label for="selectCondicion">Seleccione su estado laboral</label>
+                        <select name="selectCondicion" id="selectCondicion">
+                            <option value="1">Trabajo full time</option>
+                            <option value="2">Trabajo part time</option>
+                            <option value="3">En búsqueda laboral</option>
+                            <option value="4">Desempleado</option>
+                        </select>
+                        <hr>
+
+                        <textarea name="areaMusica" id="areaMusica">Ingrese sus gustos musicales</textarea>
+                        <hr>
+
+                        <textarea name="areaComidas" id="areaComidas">Ingrese sus comidas preferidas</textarea>
+                        <hr>
+
+                        <label for="imgInput">Ingrese su foto de usuario:</label>
+                        <ion-icon id="imagenIconoForm" name="person-add-outline"></ion-icon>
+                        <input type="file" id="imgInput" name="imgInput" accept="imagen/*" required>
+                        <hr>
+                        <label for="checkboxRecordarDatos">Recordar mis datos</label>
+                        <input type="checkbox" id="checkboxRecordarDatos" name="checkboxRecordarDatos">
+                        <hr>
+
+                        <input type="submit" value="Enviar" id="submitInput">
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
