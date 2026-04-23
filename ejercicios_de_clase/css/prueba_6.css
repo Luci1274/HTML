@@ -1,0 +1,30 @@
+article h4 {
+    color: red;
+}
+
+div > a {
+    color: red;
+}
+
+div > p > a {
+    color: green;
+}
+
+div p {
+    color: brown;
+}
+
+/*Este: div > p > a 
+y 
+Este: div p a
+Es lo mismo*/
+
+div p a {
+    background-color: blueviolet;
+}
+
+div > #Enlace {
+    text-decoration: underline blue;
+    font-size: 20px;
+    cursor: cell;
+}

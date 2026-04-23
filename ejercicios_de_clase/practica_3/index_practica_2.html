@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            position: fixed;
+            background-color: rgb(44, 41, 41);
+            top: 0%;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        #contenedor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #titlo_deader {
+            color: white;
+            margin-left: 20px;
+        }
+        #opciones_usuarios {
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+        }
+        #opciones_usuarios a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: darkgrey;
+
+        }
+
+        #tabla_paso_2 {
+            background-color: blueviolet;
+            color: yellow;
+            text-align: center;
+        }
+
+        #tabla_paso_3 {
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+    <title>Mi primera pagina web</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="contenedor">
+            <div id="titlo_deader">
+                <h1>Mi primera pagina</h1>
+            </div>
+            <div id="opciones_usuarios">
+                <div id="iniciar sesion">
+                    <p class="botones"><a href="login.html">Iniciar sesión</a></p>
+                </div>
+                <div>
+                    <p class="botones"><a href="perfil.html">Perfil</a></p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </header>
+    <main>
+        <h2>
+            Presentación
+        </h2>
+        <p>Esta pagina es mi primera pagina web. La cual es para un <b>ejercicio</b> institucional.</p>
+        <p>El cual consiste en aplicar lo dado en clase hasta ahora.</p>
+        <p>Espero que les guste y por consiguiente me <mark>aprueben</mark>.</p>
+
+        <hr>
+
+        <h2>
+            Paginas favoritas
+        </h2>
+        <p>Estos son mis 3 videos favoritos para aprender programación:</p>
+        <ol>
+            <li><a href="https://www.youtube.com/watch?v=nvh51c4UfmM" target="_blank">Video para armar una barra
+                    lateral</a></li>
+            <li><a href="https://www.youtube.com/watch?v=JVNirg9qs4M" target="_blank">Video para aprender los pilares de
+                    POO</a></li>
+            <li><a href="https://www.youtube.com/watch?v=3GymExBkKjE" target="_blank">Video para aprender Git y
+                    GitHub</a></li>
+        </ol>
+        <p>Ahora van páginas random que se me ocurren:</p>
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/El_Se%C3%B1or_de_los_Anillos" target="_blank">Página de Wikipedia
+                    del señor de los anillos</a></li>
+            <li><a href="https://warhammerfantasy.fandom.com/es/wiki/Biblioteca_del_Viejo_Mundo" target="_blank">Página
+                    de Warhammer Fantasy</a></li>
+            <li><a href="https://www.google.com" target="_blank">Página de Google(me quedé sin <u>ideas</u>)</a></li>
+        </ul>
+        <hr>
+
+        <h2>Galería de imágenes aleatorias</h2>
+        <img src="img/alguno-de-los-mil-hijos-a-sido-relevante-en-el-lore-de-40k-v0-l7fc8idxo5wb1.jpg" alt=""
+            width="150px" height="150px" title="Un marine de los mil hijos matando a otro">
+        <img src="img/EZSTXGDBEJGQFG3SDCFVSVY2N4.avif" alt="" width="150px" height="150px"
+            title="Un gato siamés hermoso">
+        <img src="img/pizza.jpg" alt="" height="150px" width="150px" title="Imagen de una pizza porque me dio hambre">
+
+        <hr>
+        <h2>Practica 2</h2>
+
+        <table border="2" id="tabla_paso_2">
+            <thead>
+                <td>hola</td>
+                <td>mundo</td>
+                <td>chau</td>
+                <td>mundo</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>h</td>
+                    <td>o</td>
+                    <td>l</td>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <td>m</td>
+                    <td>u</td>
+                    <td>n</td>
+                    <td>d</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table border="5" id="tabla_paso_3">
+            <thead>
+                <tr>
+                    <td>dato 1</td>
+                    <td colspan="3">dato 2</td>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dato 5</td>
+                    <td>dato 6</td>
+                    <td>dato 7</td>
+                    <td>dato 8</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">dato 9</td>
+                    <td colspan="3">dato 10</td>
+                </tr>
+                <tr>
+                    <td>dato 13</td>
+                    <td>dato 14</td>
+                    <td>dato 15</td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>dato 17</td>
+                    <td>dato 18</td>
+                    <td>dato 19</td>
+                    <td>dato 20</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Gerardo no me robes la página</p>
+    </footer>
+</body>
+
+</html>
