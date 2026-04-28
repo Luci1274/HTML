@@ -1,0 +1,44 @@
+*{
+    font-family: "Playwrite NO", cursive;
+}
+
+p {
+    display: block;
+    background-color: #66ff44;
+}
+
+h2 {
+    color: rgba(68, 211, 255, 0.521);
+    background-color: #4172fa;
+}
+
+.playwrite-no {
+  font-family: "Playwrite NO", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+i{
+    color: red;
+    background-color: rgba(96, 125, 134, 0.521);
+    height: 150px;
+    width: 150px;
+}
+
+a  {
+  color: rgb(12, 12, 145);
+  background-color: color-mix(in srgb, red 50%, black 25%);  
+  cursor: wait;
+}
+
+a:hover {
+    color: rgb(85, 0, 255);
+    background-color: black;
+}
+
+a:visited {
+    color: rgb(153, 255, 0);
+    background-color: chocolate;
+    cursor: wait;
+}
