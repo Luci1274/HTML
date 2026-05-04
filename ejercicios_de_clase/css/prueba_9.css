@@ -1,0 +1,41 @@
+select {
+    appearance: menulist;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select {
+    background: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+option {
+    background: #333;
+    color: white;
+    border-radius: 8px;
+}
+
+option:hover {
+    background: #555;
+
+}
+
+option:checked{
+    background-color: #09f;
+    color: white;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}

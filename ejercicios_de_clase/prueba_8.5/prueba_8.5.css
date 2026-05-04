@@ -8,6 +8,7 @@ html{
 
 :root{
     --color72: #blue;
+
 }
 
 *{
@@ -38,3 +39,54 @@ table.table-custom thead{
     background-color: rgb(250, 250, 250);
 }
 
+table.table-custom thead th {
+    text-align: left;
+    color: var(--color72);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 300px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color72);
+}
+
+table.table-custom tbody tr:hover {
+    background-color: rgb(117, 150, 175);
+}
+
+table.table-custom tbody td {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid var(--color72);
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+table.table-custom tbody td .data-container {
+    display: inline-block;
+}
+
+table.table-custom tbody td .img-container {
+    float: left;
+    margin-right: 13px;
+    padding-top: 13px;
+}
+
+table.table-custom tbody td .img-container img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.badg-active {
+    padding: 7px 15px;
+    background-color: #9fe19f ;
+    border-radius: 20px ;
+    color: #4a6a4a; 
+}
+
+.box {
+    background: #2a7b9b;
+    background: linear-gradient(90 deg, rgba(42,123,155,1), 0%,rgba(87,199,133,1), 50% ,rgba(232,221,83,1), 100%);
+    width: 250px;
+    height: 150px;
+    border-radius: 35px;
+    corner-shape: initial ;
+}
