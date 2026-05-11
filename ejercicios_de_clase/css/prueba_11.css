@@ -1,0 +1,100 @@
+/* .container {
+    display: grid;
+    grid-template-columns: auto repeat(4, 150px); 
+    grid-template-rows: auto repeat(3,150px);
+    background-color: beige;
+    text-align: center;
+    grid-gap: 10px;
+}
+
+.item {
+    border: 1px solid gray;
+    border-radius: 30px;
+    align-content: center;
+} */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(4,110px);
+    grid-template-areas: 
+    "header header header header"
+    "main main . slider"
+    "footer footer footer footer";
+}
+
+.item-a {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.item-b {
+    grid-area: main;
+    background-color: rgb(184, 184, 87);
+}
+
+.item-c {
+    grid-area: slider;
+    background-color: blue;
+
+}
+
+.item-d {
+    grid-area: footer;
+    background-color: brown;
+} */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(44,100px);
+    grid-template-areas: 
+    "header header . . ."
+    ". . slider footer footer"
+    "main main slider . ."
+    "main main slider . .";
+    
+
+}
+
+.item {
+    border: 1px solid;
+}
+
+.item-a {
+    grid-area: header;
+    background-color: blue;
+}
+
+.item-b {
+    grid-area: main;
+    background-color: bisque;
+}
+
+.item-c {
+    grid-area: slider;
+    background-color: brown;
+}
+
+.item-d {
+    grid-area: footer;
+    background-color: burlywood;
+}*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: auto;
+}
+
+.item {
+    background-color: bisque;
+    border: 1px solid;
+}
+
+.item-a {
+    grid-column: 1/4;
+}
+
+.item-b {
+    grid-row: 1/3;
+}
