@@ -1,0 +1,38 @@
+:root {
+    --color-fondo: #4d7298;
+    
+}
+
+.container> * {
+    background-color: var(--color-fondo);
+    border: 2px solid #77a6b6;
+    border-radius: 0.5em;
+    color: white;
+    padding: 0.5em;
+    justify-self: end; /* strech-start-end-centre */
+    align-self: self-start; /* strech-start-end-center */
+}
+
+/* Mobile */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Tablet */
+
+@media(min-width:600px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Desktop */
+
+@media(min-width: 900px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
