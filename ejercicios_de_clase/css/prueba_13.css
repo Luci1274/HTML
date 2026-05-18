@@ -1,0 +1,109 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "cabecera cabecera"
+    "cuerpo cuerpo";
+    grid-column-gap: 10px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor_cabecera {
+    grid-area: cabecera;
+}
+
+.contenedor_cuerpo {
+    grid-area: cuerpo;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-template-areas: 
+    "contenedor_main_lateral main";
+    border: 1px solid white;
+}
+
+header {
+    text-align: center;
+    border: 5px solid white;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav .contenedor_nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav .contenedor_nav button {
+    padding: 5px;
+    margin: 5px;
+    background-color: black;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 25%;
+    cursor: pointer;
+    
+}
+
+nav .contenedor_nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav button:hover {
+    background-color: gray;
+    color: burlywood;
+    text-decoration: underline;
+}
+
+nav .contenedor_nav a:hover {
+    color: yellow;    
+}
+
+
+
+.contenedor_cuerpo .contenedor_main_lateral {
+    grid-area: contenedor_main_lateral;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.contenedor_cuerpo main {
+    grid-area: main;
+}
+
+main .contenedor_main {
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.contenedor_main .item {
+    margin: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    height: 100%;
+    background-color: blue;
+}
+
+.contenedor_main .item-d {
+    border: 1px solid gray;
+    border-radius: 100%;
+}
