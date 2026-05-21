@@ -22,7 +22,7 @@ body {
 .contenedor_cuerpo {
     grid-area: cuerpo;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 500px 1fr;
     grid-column-gap: 25px;
     grid-template-areas: 
     "contenedor_main_lateral main";
@@ -90,12 +90,13 @@ nav .contenedor_nav a:hover {
 main .contenedor_main {
     background-color: brown;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
+    
 
 }
 .contenedor_main .item {
-    margin: 25px;
+    margin: 15px;
     border: 1px solid black;
     border-radius: 10px;
 
@@ -103,7 +104,28 @@ main .contenedor_main {
     background-color: blue;
 }
 
+.contenedor_main .item-a {
+    width: 150px;
+    height: 400px;
+}
+
+.contenedor_main .item-b {
+    width: 150px;
+    height: 300px;
+}
+
+.contenedor_main .item-c {
+    width: 150px;
+    height: 200px;
+}
+
 .contenedor_main .item-d {
+    width: 150px;
+    height: 150px;
     border: 1px solid gray;
     border-radius: 100%;
+    position: relative;
+    left: -300px;
+    bottom: 130px;
+    
 }
