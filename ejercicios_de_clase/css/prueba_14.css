@@ -1,0 +1,38 @@
+/* .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.name {
+    flex: 1 0 140px;
+}
+
+.mail {
+    flex: 1 0 120px;
+}
+
+button {
+ flex: 1 0 60px;
+} */
+
+h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 50px;
+    background-image: url(alguno-de-los-mil-hijos-a-sido-relevante-en-el-lore-de-40k-v0-l7fc8idxo5wb1.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 50s linear infinite;
+}
+
+@keyframes animate {
+    to {
+      background-position-x: -500px;  
+    }
+}
+
+
+body {
+    background-color: cyan;
+}
