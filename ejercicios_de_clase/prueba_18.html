@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="contenedor">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem neque necessitatibus delectus quas corrupti omnis possimus expedita eveniet, adipisci voluptas impedit sunt ipsum illo laborum repellendus atque distinctio officiis.</p>
+        <button onclick="alguna_funcion()" id="button">Escribe algo</button>
+    </div>
+    <div id="contenedor_2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, commodi maiores? Odio debitis et similique repudiandae a adipisci, accusantium earum alias unde error neque ducimus cumque quo ullam, vel ab!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat! Exercitationem deleniti odit recusandae nostrum dignissimos error nulla unde aperiam ea ipsam voluptate veritatis, laborum iure consectetur, explicabo nemo eveniet!</p>
+        <button onclick="otra_funcion()">Otra funcion</button>
+    </div> -->
+
+    <form action="">
+        <label for="txtNombre">Ingrese un nombre</label>
+        <input type="text" name="txtNombre" id="txtNombre" >
+        <br>
+        <label for="txtApellido">Ingrese un apellido</label>
+        <input type="text" name="txtApellido" id="txtApellido" >
+        <br>
+        <label for="selectGenero">Elija su genero</label>
+        <select name="selectGenero" id="selectGenero" onchange="fprofesion()">
+            <option value="0">Elegir sexo</option>
+            <option value="1">Masculino</option>
+            <option value="2">Femenino</option>
+        </select>
+        <br>
+        <label for="pProfesion">Elija su profesion</label>
+        <select name="pProfesion" id="pProfesion">
+            <option value=""> Primero elige un genero </option>
+        </select>
+
+        <p><b>Comentario</b></p>
+        <textarea name="txtareaComentario" id="txtareaComentario"></textarea>
+        <br>
+        <button onclick="validar()">Validar</button>
+        
+    </form>
+    <script src="js/prueba_18.js"></script>
+</body>
+</html>
