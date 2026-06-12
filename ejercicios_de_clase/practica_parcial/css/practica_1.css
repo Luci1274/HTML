@@ -1,0 +1,77 @@
+* {
+    margin-top: 10px;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: auto, minmax(100px, 1fr);
+    grid-template-rows: auto, minmax(250px, 1fr);
+    grid-template-areas: "encabezado"
+    "cuerpo_principal"
+    "fin_pagina";
+}
+
+header {
+    grid-area: encabezado ;
+    text-align: center;
+}
+
+main {
+    grid-area: cuerpo_principal;
+}
+
+footer {
+    grid-area: fin_pagina;
+}
+.titulos {
+    font-size: 30px;
+    background-color: orange;
+    text-align: center;
+    margin: 10px;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+thead {
+    
+    background-color: orange;
+}
+td {
+    border: 1px solid black;
+    color: blue;
+}
+
+.contenedor_formulario {
+    background-color: rgb(190, 189, 189);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.contenedor_formulario button {
+    font-size: 15px;
+    background-position: 25px;
+    margin-left: 30%;
+    margin-top: 5px;
+}
+
+.contenedor_formulario input:hover {
+    color:blue;
+    background-color: cadetblue;
+}
+
+.contenedor_formulario button:hover {
+    background-color: cadetblue;
+    color: yellow;
+}

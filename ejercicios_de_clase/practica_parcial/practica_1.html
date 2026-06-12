@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/practica_1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Pagina de repaso de contenidos</h1>
+        </header>
+        <main>
+            <p class="titulos"><b>Tabla</b></p>
+            <table>
+                <caption>Personas</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luciano</td>
+                        <td>Gonzalez</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Catalina</td>
+                        <td>Marengo</td>
+                        <td>41</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriela</td>
+                        <td>Marin</td>
+                        <td>91</td>
+                    </tr>
+                </tbody>
+                <footer>
+                    <tr>
+                        <td colspan="2">Edades totales: </td>
+                        <td>153</td>
+                    </tr>
+                </footer>
+            </table>
+            <div class="contenedor_formulario">
+                <form action="">
+                    <p class="titulos"><b>Formulario</b></p>
+                    <label for="nombre_input">Ingresar nombre</label>
+                    <input type="text" name="nombre_input" id="nombre_input" placeholder="Ej:Luciano" required>
+                    <br>
+                    <label for="contraseña_input">Ingrese una contraseña ficticia</label>
+                    <input type="password" name="contraseña_input" id="contraseña_input" placeholder="Ej: ......" required>
+                    
+                    <input type="checkbox" name="mostrar_contraseña" id="mostrar_contraseña"> <span>Mostrar contraseña</span>
+                    <br>
+                    <label for="fecha_nacimiento_input">Ingrese su Fecha de nacimiento</label>
+                    <input type="date" name="fecha_nacimiento_input" id="fecha_nacimiento_input">
+                    <button>Validar</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+
+
+<script src="js/prueba_1.js"></script>
+</body>
+</html>
