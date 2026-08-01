@@ -62,7 +62,7 @@ function bienvenida() {
     txt_nombre = document.getElementById("nombre_usuario_7");
     let bienvenida;
     bienvenida = document.getElementById("parrafo_bienvenida");
-    bienvenida.innerHTML = "Bienvenido"+ " " + txt_nombre.value;
+    bienvenida.innerHTML = "Bienvenido"+ " " + txt_nombre.value
 };
 
 // ejercicio 8
@@ -91,7 +91,7 @@ function cambiar_tamaño() {
 };
 
 // ejercicio 10
-function mostrar_loguitud() {
+function mostrar_longuitud() {
     let text = document.getElementById("longuitud_texto");
     let loguitud = text.value.length;
     let parrafo = document.getElementById("parrafo_loguitud");
