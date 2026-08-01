@@ -91,3 +91,9 @@ function cambiar_tamaño() {
 };
 
 // ejercicio 10
+function mostrar_loguitud() {
+    let text = document.getElementById("longuitud_texto");
+    let loguitud = text.value.length;
+    let parrafo = document.getElementById("parrafo_loguitud");
+    parrafo.textContent = "La longuitud de su palabra es: " + loguitud
+};
