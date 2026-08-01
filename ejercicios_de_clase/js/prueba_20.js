@@ -48,5 +48,10 @@ fecha_hora.innerHTML = "La fecha y hora actual es: " + new Date().toLocaleString
 
 //ejercicio 6
 function mostrar_nombre() {
+    let txt_nombre;
+    txt_nombre = document.getElementById("nombre_usuario");
+    let nuevo_valor;
+    nuevo_valor = document.getElementById("parrafo_cambiar");
+    nuevo_valor.innerHTML = txt_nombre.value;
     
 }
