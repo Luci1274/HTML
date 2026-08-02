@@ -110,4 +110,38 @@ function cambiar_contenido() {
 //ejercicio 12
 function mostrar_alerta() {
     alert("Esta es una alertaaaaaaaaaaaaaaaa")
+};
+
+//ejercicio 13
+function cambiar_color_parrafo() {
+    let input_color;
+    input_color = document.getElementById("cambiar_color_13");
+    let color;
+    color = input_color.value;
+    let parrafo;
+    parrafo = document.getElementById("parrafo_cambiar_13");
+    parrafo.style.backgroundColor = color;
+};
+
+//ejercicio 14
+function ocultar() {
+    let imagen;
+    imagen = document.getElementById("imagen_ocultar");
+    if (imagen.style.display == "") {
+        imagen.style.display = "none";
+    } else {
+        imagen.style.display = "";
+    }
+};
+
+//ejericio 15
+function contador() {
+    let numero;
+    numero = Document.getElementById("numero_15");
+    let parrafo;
+    parrafo = document.getElementById("parrafo_contador");
+    for (let i = numero.value; i > 0; i--) {
+        
+    }
+
 }
