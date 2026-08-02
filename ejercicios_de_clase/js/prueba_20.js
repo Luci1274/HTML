@@ -97,3 +97,17 @@ function mostrar_longuitud() {
     let parrafo = document.getElementById("parrafo_loguitud");
     parrafo.textContent = "La longuitud de su palabra es: " + loguitud
 };
+
+//ejercicio 11
+function cambiar_contenido() {
+    let text;
+    text = document.getElementById("text_div");
+    let div;
+    div = document.getElementById("div_cambiar");
+    div.textContent = text.value
+};
+
+//ejercicio 12
+function mostrar_alerta() {
+    alert("Esta es una alertaaaaaaaaaaaaaaaa")
+}
