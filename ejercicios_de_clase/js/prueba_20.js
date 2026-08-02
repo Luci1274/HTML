@@ -137,11 +137,21 @@ function ocultar() {
 //ejericio 15
 function contador() {
     let numero;
-    numero = Document.getElementById("numero_15");
+    numero = document.getElementById("numero_15");
     let parrafo;
     parrafo = document.getElementById("parrafo_contador");
-    for (let i = numero.value; i > 0; i--) {
-        
-    }
+    let i = numero.value;
+    let intervalo;
 
+    clearInterval(intervalo);
+    parrafo.textContent = i;
+    
+    intervalo = setInterval(() => {
+        i--;
+        if (i >= 0) {
+            parrafo.textContent = i;
+        } else {
+            clearInterval(intervalo);
+        }
+    }, 1000);
 }
