@@ -1,7 +1,7 @@
 function prueba_A() {
-    let A = prompt("Ingrese el primer numero");
-    let B = prompt("Ingrese el segundo numero");
-    let C = prompt("Ingrese el tercer numero");
+    let A = Number(prompt("Ingrese el primer numero"));
+    let B = Number(prompt("Ingrese el segundo numero"));
+    let C = Number(prompt("Ingrese el tercer numero"));
     let es_mayor;
     if (B > A) {
         if (C > B) {
@@ -17,8 +17,7 @@ function prueba_A() {
 };
 
 function prueba_B() {
-    let numero = prompt("Ingrese el primer numero");
-    let parrafo = prompt("Ingrese el segundo numero")
+    let numero = prompt("Ingrese el numero");
     if (numero % 2 === 0) {
         alert("Es par");
     } else {
@@ -32,39 +31,42 @@ function dia_semana() {
 
     switch (nomDay) {
         case 6:
-            alert("Sabado")
+            alert("Sabado");
             break;
         case 0:
-            alert("Domingo")
+            alert("Domingo");
             break;
         case 1:
-            alert("Lunes")
+            alert("Lunes");
+            break;
+        case 4:
+            alert("Martes");
             break;
         default:
-            alert("otros")
+            alert("otros");
             break;
     }
 };
 
 
 function calculadora() {
-    let a = 1;
-    let b = 2;
-    let operador = "*";
+    let a = Number(prompt("Ingrese el primer numero"));
+    let b = Number(prompt("Ingrese el segundo numero"));
+    let operador = prompt("Ingrese el operador (+,-,*, %)");
     let resultado;
 
     switch (operador) {
         case "*":
             resultado = a * b;
-            alert(resultado);
+            alert(`El resultado es ${resultado}`);
             break;
         case "+":
             resultado = a + b;
-            alert(resultado);
+            alert(`El resultado es ${resultado}`);
             break;
         case "-":
             resultado = a - b;
-            alert(resultado);
+            alert(`El resultado es ${resultado}`);
             break;
         case "%":
             if (b === 0) {
@@ -72,17 +74,19 @@ function calculadora() {
                 break;
             } else {
                 resultado = a % b;
-                alert(resultado);
+                alert(`El resultado es ${resultado}`);
                 break;
             }
+        default:
+            alert("Error al realizar el calculo");
+            break;
     }
 };
 
 function calculo() {
-    let num = 10500;
-    let resultado = (num >= 10000) ? console.log(num * 0.80) : console.log(num);
+    let num = Number(prompt("Ingrese un numero"));
+    let resultado = (num >= 10000) ? alert(num * 0.80) : alert(num);
 };
-calculo()
 
 function mayor_b() {
     let A = 1;
@@ -91,5 +95,3 @@ function mayor_b() {
 
     let mayor = A>B ? (A>C ? A : C) : (B>C ? B: C)
 }
-
-mayor_b()
