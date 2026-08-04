@@ -89,9 +89,9 @@ function calculo() {
 };
 
 function mayor_b() {
-    let A = 1;
-    let B = 2;
-    let C = 3;
+    let A = Number(prompt("Ingrese el primer numero"));
+    let B = Number(prompt("Ingrese el segundo numero"));
+    let C = Number(prompt("Ingrese el tercer numero"));
 
-    let mayor = A>B ? (A>C ? A : C) : (B>C ? B: C)
+    let mayor = A>B ? (A>C ? alert(`El numero mayor es ${A}`) : alert(`El numero mayor es ${C}`)) : (B>C ? alert(`El numero mayor es ${B}`): alert(`El numero mayor es ${C}`))
 }
