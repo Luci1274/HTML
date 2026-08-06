@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora con js</h1>
+        </header>
+        <main>
+            <h2>Calculadora</h2>
+            <button type="button" onclick="mostrar_calculadora()">Probar la calculadora</button>
+
+            <div class="calculadora" style="display: none;" id="calculadora">
+                <div class="parte_superior">
+                    <p class="texto_resultado" id="texto_resultado">0</p>
+                </div>
+                <div class="operativo" id="contenedor_botones">
+                    <button class="botones numeros">7</button>
+                    <button class="botones numeros">8</button>
+                    <button class="botones numeros">9</button>
+                    <button class="botones operaciones">+</button>
+                    
+                    <button class="botones numeros">4</button>
+                    <button class="botones numeros">5</button>
+                    <button class="botones numeros">6</button>
+                    <button class="botones operaciones">-</button>
+                    
+                    <button class="botones numeros">1</button>
+                    <button class="botones numeros">2</button>
+                    <button class="botones numeros">3</button>
+                    <button class="botones operaciones">*</button>
+                    
+                    <button class="botones numeros">0</button>
+                    <button class="botones operaciones">%</button>
+                    <button class="botones operaciones">=</button>
+                    <button class="botones operaciones">C</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
