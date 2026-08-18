@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="contar_visitas(); guardar_color_ls()">
+
+    <div class="container">
+        <header>
+            <h1>Practica de LocalStorage y SessionStorage</h1>
+        </header>
+
+        <main>
+            <div class="ejercicio" id="ejercicio_1">
+                <h2>Ejercicio 1: Guardar y mostrar un nombre de usuario</h2>
+                <p><b>Consigna:</b> Crea una página que permita al usuario ingresar su nombre y guardarlo en LocalStorage.Luego, muestra el nombre en la página.</p>
+                <form action="">
+                    <label for="guardar_nombre_local">Ingrese un nombre de usuario</label>
+                    <input type="text" name="guardar_nombre_local" id="guardar_nombre_local" >
+                    <button type="button" onclick="guardar_nombre_ls()">Guardar nombre</button>
+                </form>
+                <p id="mostrar_1"></p>
+            </div>
+            <hr>
+            <div class="ejercicio" id="ejercicio_2">
+                <h2>Ejercicio 2: Contador de visitas</h2>
+                <p><b>Consigna: </b> Crea una página que cuente cuántas veces ha sido visitada utilizando LocalStorage</p>
+                <p id="mostrar_2"></p>
+            </div>
+
+            <hr>
+            <div class="ejericio" id="ejecicio_4">
+                <h2>Ejericio 3 Guardar preferenicas de color</h2>
+                <p><b>Consigna:</b> Crea una página que permita al usuario seleccionar un color de fondo y guardarlo en LocalStorage. Al recargar la página, el color de fondo debe mantenerse.</p>
+
+                <form action="">
+                    <label for="color_elegido">Elija el color que desee para el fondo</label>
+                    <input type="color" name="color_elegido" id="color_elegido">
+                    <p mostrar_3> HOLAAA, no elijas negro</p>
+                    <button type="button" onclick="guardar_color_ls()">guardar color</button>
+                </form>
+            </div>
+
+        </main>
+    </div>
+    
+<script src="script.js"></script>    
+</body>
+</html>
