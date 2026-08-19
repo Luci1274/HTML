@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body onload="contar_visitas(); guardar_color_ls()">
+<body onload="contar_visitas(); aplicar_color_iniciar(); mostrar_listado(); temporizador(); mostrar_notas()">
 
     <div class="container">
         <header>
@@ -32,6 +32,7 @@
             </div>
 
             <hr>
+            <h2>Ejercicio 5 Temporizador con SessionStorage</h2>
             <div class="ejericio" id="ejecicio_4">
                 <h2>Ejericio 3 Guardar preferenicas de color</h2>
                 <p><b>Consigna:</b> Crea una página que permita al usuario seleccionar un color de fondo y guardarlo en LocalStorage. Al recargar la página, el color de fondo debe mantenerse.</p>
@@ -39,8 +40,46 @@
                 <form action="">
                     <label for="color_elegido">Elija el color que desee para el fondo</label>
                     <input type="color" name="color_elegido" id="color_elegido">
-                    <p mostrar_3> HOLAAA, no elijas negro</p>
                     <button type="button" onclick="guardar_color_ls()">guardar color</button>
+                </form>
+            </div>
+            <hr>
+            <div class="ejercicio">
+                <h2>Ejercicio 4 guardar y mostrar lista</h2>
+                <p><b>Consigna: </b> Crea una página que permita al usuario agregar tareas a una lista y guardarlas en LocalStorage. Las tareas deben mostrarse en la página.</p>
+
+                <form action="">
+                    <label for="listado">Ingrese el listado de a 1 palabra</label>
+                    <input type="text" name="listado" id="listado">
+                    <button type="button" onclick="guardar_listado()">Guardar listado</button>
+                    <p id="mostrar_4"></p>
+                </form>
+            </div>
+            <hr>
+            <div class="ejercicio">
+                <h2>Ejercicio 5: Temporizador con SessionStorage</h2>
+                <p><b>Consigna: </b> Crea una página con un temporizador que guarde el tiempo transcurrido en SessionStorage. Al recargar la página, el temporizador debe continuar desde donde se quedó.</p>
+                <p id="mostrar_5"></p>
+            </div>
+            <hr>
+            <div class="ejercicio">
+                <h2>Ejercicio 6: Guardar y mostrar notas</h2>
+                <p><b>Consigna: </b> Crea una página que permita al usuario guardar notas en LocalStorage y mostrarlas en la página.</p>
+
+                <form action="">
+                    <label for="alumno">Ingrese el nombre del alumno</label>
+                    <input type="text" name="alumno" id="alumno">
+                    <br>
+                    <label for="materia">Ingrese el nombre de la materia</label>
+                    <input type="text" name="materia" id="materia">
+                    <br>
+
+                    <label for="nota">Ingrese la nota del alumno</label>
+                    <input type="number" name="nota" id="nota" min="0">
+                    <br>
+
+                    <button type="button" onclick="guardar_notas()">Guardar las notas</button>
+                    <p id="mostrar_6"></p>
                 </form>
             </div>
 
